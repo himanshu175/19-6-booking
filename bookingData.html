@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+     <!-- Popper JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+     <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/1f280ffe0a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="inner-container d-flex justify-content-space-between align-items-center">
+            <div class="section">
+                <div class="sec-nav">
+                    <h1 class="heading1"><i class="fas fa-long-arrow-alt-left"></i> Booking Data</h1>
+                </div>
+                <div class="sec-div my-5 mx-4 p-3 d-flex justify-content-space-between">
+                     <div class="left-booking-box">
+                         <div class="date">
+                            <p class="pb-1">09:15am-09:30am</p>
+                            <span>Thursday,17 june 2021</span>
+                         </div>
+                         <button class="btn btn-outline-dark my-4" style="width: 150px;" data-toggle="modal" data-target="#Cancel">Cancel Booking</button> <br>
+                         <button class="btn btn-outline-dark" style="width: 150px;" data-toggle="modal" data-target="#Reschedule">Reschedule</button>
+                        <!-- popup -->
+
+                        <div class="modal fade" id="Cancel" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="CancelLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="CancelLabel">Cancellation Note</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <textarea name="" id="" cols="62" rows="5"></textarea>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-light mx-2" data-dismiss="modal">Back</button>
+                                <button type="button" class="btn btn-danger">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                         <div class="modal fade" id="Reschedule" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="RescheduleLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="RescheduleLabel">Reschedule Note</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <textarea name="" id="" cols="62" rows="5"></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-light mx-2" data-dismiss="modal">Back</button>
+                                  <button type="button" class="btn btn-danger">Reschedule</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  popup -->
+                     </div>
+                     <div class="right-booking-box px-4">
+                         <div class="user">
+                             <h1 class="heading1">Udit <br> 15 Minute Meeting</h1>
+                             <p class="py-1 m-0" style="color: rgba(41, 41, 41, 0.678);"><span class="t-color" style="color: #3D7EAA;">Reschedule by K deep:</span>"addadwa"</p>
+                         </div>
+                         <div class="appointment py-1">
+                            <h5 class="heading5 mt-3">Email</h5>
+                            <p>uarora1997@gmail.com</p>
+                         </div>
+                         <div class="appointment py-1">
+                            <h5 class="heading5">LOCATION</h5>
+                            <p>No location given</p>
+                         </div>
+                         <div class="appointment py-1">
+                            <h5 class="heading5">INVITEE TIME ZONE</h5>
+                            <p>India Standard Time</p>
+                         </div>
+                         <div class="appointment py-1">
+                            <h5 class="heading5">QUESTIONS</h5>
+                            <p>Please share anything that will help prepare for our meeting.</p>
+                         </div>
+                         <div class="appointment py-1">
+                            <p class="m-0" style="color: #007bff;">Add meeting notes</p>
+                            <span>(only the host will see these)</span>
+                         </div>
+                         <div class="appointment py-1 my-3">
+                            <h5 class="heading5 py-4" style="border-bottom: 1px solid rgba(128, 128, 128, 0.363);">INVITEES<span style="font-size: 18px; font-weight: 500; color: #0e0e0e9a;">(0 SPOTS REMAINING)</span></h5>
+                            <h5 class="heading5 py-4" style="border-bottom: 1px solid rgba(128, 128, 128, 0.363);">Sector-8C <span style="float: right; font-size: 17px; color: #0e0e0e9a;">invitee details</span></h5>
+                            <h5 class="heading5 py-4" style="border-bottom: 1px solid rgba(128, 128, 128, 0.363);">Udit Arora<span style="float: right; font-size: 17px; color: #0e0e0e9a;">invitee details</span></h5>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <div class="nav"></div>
+        </div>
+    </div>
+</body>
+</html>
